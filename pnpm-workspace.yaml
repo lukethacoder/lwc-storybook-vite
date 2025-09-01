@@ -1,0 +1,7 @@
+onlyBuiltDependencies:
+  - '@lukethacoder/lwc-module-resolver'
+  - aws-sdk
+  - core-js
+  - core-js-pure
+  - esbuild
+  - protobufjs
