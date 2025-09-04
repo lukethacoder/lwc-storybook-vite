@@ -11,8 +11,8 @@ const alias: AliasOptions = [
      * Find all html imports and add ?import to the end of
      * the import, ignoring `iframe.html` and any `@storybook` imports?
      */
-    // find: /^(?!.*index)(?!iframe\.html$)(.*)\.html$/,
-    find: /^(?!.*[\/\\]@storybook[\/\\])(?!.*index)(?!.*iframe\.html(\?|$))(.*)\.html(\?|$)/,
+    find: /^(?!.*index)(?!.*iframe\.html$)(.*)\.html$/,
+    // find: /^(?!.*[\/\\]@storybook[\/\\])(?!.*index)(?!.*iframe\.html(\?|$))(.*)\.html(\?|$)/,
     replacement: '$1.html?import',
     // replacement: (match, p1) => {
     //   console.log(`Transforming: ${match} → ${p1}.html?import`)

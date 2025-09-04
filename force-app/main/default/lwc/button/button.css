@@ -1,3 +1,6 @@
+/* runs fine in dev, but breaks in build */
+@import 'c/cssShared';
+
 button {
   cursor: pointer;
   background-color: #deb887;

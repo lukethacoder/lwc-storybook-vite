@@ -91,7 +91,7 @@ export default function lwcVite(config: ViteLwcOptions): Plugin {
         importer &&
         path.extname(importer) === '.js' &&
         path.isAbsolute(importer) &&
-        path.extname(source) === '.html'
+        (path.extname(source) === '.html' || source.endsWith('html?import'))
       ) {
         const dir = path.dirname(importer)
         let filePath = path.join(dir, source)

@@ -1,0 +1,17 @@
+{
+  "modules": [
+    {
+      "dir": "./modules/test",
+      "namespace": "test"
+    },
+    {
+      "dir": "./force-app/main/default/lwc",
+      "namespace": "c"
+    }
+  ],
+  "experimentalDynamicDirective": true,
+  "enableDynamicComponents": true,
+  "experimentalDynamicComponent": {
+    "strictSpecifier": false
+  }
+}
